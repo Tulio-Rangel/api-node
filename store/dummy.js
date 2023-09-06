@@ -1,5 +1,5 @@
 const db = {
-  user: [{ id: "1", name: "Amadeus" }],
+  user: [{ id: "1", name: "Carlos" }],
 };
 
 async function list(tabla) {
@@ -12,7 +12,7 @@ async function get(tabla, id) {
 }
 
 async function upsert(tabla, data) {
-  db[collection].push(data);
+  db[tabla].push(data);
 }
 
 async function remove(tabla, id) {
